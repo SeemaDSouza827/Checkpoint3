@@ -54,26 +54,30 @@ table {
 }
 body{
     line-height: 1.5;
+    font-size: 16px;
+    background-color:var(--bg);;
     font-family: 'Poppins', sans-serif;
 }
 :root{
     --primary:#012D5B;
-    --secendory:#f9f9f9;
+    --secendory:#f9f9fe;
     --bg:#ffffff;
     --text:#000000;
     --sub-text:#919090;
     --contrast:#fd6568;
-    
 }
 .container{
     max-width: 1100px;
     margin: 0 auto;
-    padding: 0 32px;
+    /* padding: 0 32px; */
 }
 .flex{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.start{
+    justify-content: start;
 }
 .head-nav{
     padding: 8px 0;
@@ -86,14 +90,19 @@ body{
 .pad{
     padding: 15px 0;
 }
+.section-pad{
+    margin:50px 0;
+}
 .hero{
-    width: 100wh;
-    height: 100vh;
     background: url(../media/hero/h1_hero.jpg);
+    
 }
 .flexible-img{
-    width: 100%;
+    width: 70%;
     height: auto;
+}
+ul{
+    padding-left: 40px;
 }
 li{
     padding-left: 20px;
@@ -106,27 +115,205 @@ a{
     padding: 8px;
     background-color: var(--contrast);
     border: none;
-    border-radius: 3px;
+    border-radius: 2px;
     color: var(--bg);
     font-size: 16px;
     text-align: center;
 } 
+.invt-btn{
+    background-color: transparent;
+    border: 2px solid var(--contrast);
+    color: var(--contrast);
+}
 .hero{
+    width: 100%;
+    height: 100vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
     background-image: url(../media/hero/h1_hero.jpg);
 }
-.hero-content{
-    margin-top: 180px;
-    width: 50%;
-}
-.hero-content h1{
+h1{
     font-size: 64px;
     font-weight: 600;
 }
+h3{
+    font-size: 38px;
+    font-weight: 800;
+    text-align: center;
+}
+h4{
+    font-size: 26px;
+    font-weight: 600;
+}
+h5{
+    font-size: 24px;
+    font-weight: 600;
+}
+.center{
+    text-align: center;
+}
+.hero-content{
+    width: 50%;
+    vertical-align: middle;
+    text-align: left;
+}
 .hero-content h3{
     font-size: 24px;
+    font-weight: 600;
     color: var(--contrast);
 }
 .col1-3{
+    width: 100%;
+    margin: 10px;
+}
+.col1-3 h4{
+    font-size: 32px;
+}
+.col1-3 h5{
+    font-size: 24px;
+}
+.col1-3 p{
+    font-size: 12px;
+    padding: 12px 0;
+}
+.news-body{
+    background-color: var(--secendory);
+}
+.team{
+    background-color: var(--secendory);
+    height: 700px;
+}
+.team .box {
+    border: 2px solid var(--contrast); 
+    background-color: var(--bg);   
+}
+.team .btn{
+    margin: 20px 0;
+}
+.box{
+    width: 100%;
+}
+.box .line{
+    border-bottom: var(--contrast);
+    font-size: 0;
+}
+.confer{
+    height: 60vh;
+}
+.confer img{
+    padding: 25px 0;    
+    width: 40%;
+}
+.trans-box{
+    width: 350px;
+    background:linear-gradient(rgba(255, 255, 255, 0.795),rgba(255, 255, 255, 0.795)center center);
+}
+.trans-box h4{
+    font-size: 26px;
+    font-weight: 600;
+}
+.trans-box p{
+    font-size: 12px;
+    color: #919090;
+    width: 350px;
+}
+.service{
+    height: 60vh;
+    border: 2px solid #fd6568;
+    text-align: center;
+}
+.service .box{
+    width: 30%;
+    padding: 15px;
+    margin: 20px;
+    background-color: var(--secendory);
+}
+.box p{
+    font-size: 12px;
+    color: #919090;
+}
+.box .icon {
+    font-size: 52px;
+    align-items: center;
+}
+.cases-text{
     width: 30%;
 }
-git
+.cases-img img{
+    width: 220px;
+    padding-right: 10px;
+}
+.testimonial{
+    display: flex;
+    width: 100%;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+.banner{    
+    width: 100%;
+    height: 180px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    vertical-align: center;
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--bg);
+}
+.about .banner{
+    background: url(../media/hero/about_hero.jpg);
+}
+footer{
+    padding: 40px 0;
+    height: 70vh;
+}
+footer span{
+    color: var(--contrast);
+}
+footer a,.footer_para{
+    text-decoration: none;
+    color: var(--sub-text);
+}
+small{
+    color: var(--sub-text);
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+}
+.footer_nav_icons a{
+    color: var(--text);
+    font-size: 22px;
+}
+footer h6{
+    color: var(--primary);
+    font-size: 20px;
+    font-weight: 600;
+}
+footer .artical{
+    width: 30%;
+}
+.call-back{
+    background-color: var(--primary);
+    color: var(--bg);
+    height: 35vh;
+}
+.call-back .artical{
+    flex: 0 1 40%;
+    vertical-align: middle;
+}
+.call-back h3{
+    text-align: left;
+}
+.call-back .btn{
+    flex: 0 1 30%;
+}
+.form-control{
+    flex: 0 1 60%;
+    background-color: transparent;
+    border-radius: 2px;
+    border: 1px solid var(--sub-text);
+    padding: 5px;
+    margin-left: 20px;
+    color: var(--sub-text);
+}
