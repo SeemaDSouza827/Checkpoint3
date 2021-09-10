@@ -164,6 +164,7 @@ h5{
 }
 .col1-3{
     width: 100%;
+    height: 50vh;
     margin: 10px;
 }
 .col1-3 h4{
@@ -176,12 +177,24 @@ h5{
     font-size: 12px;
     padding: 12px 0;
 }
+.news{
+    height: 60vh;
+    width: 100vw;
+}
 .news-body{
     background-color: var(--secendory);
 }
+.news-body p{
+    font-size: 14px;
+    color: var(--contrast);
+}
+.news-body time{
+    font-size: 16px;
+    color: var(--sub-text);
+}
 .team{
     background-color: var(--secendory);
-    height: 700px;
+    height: 75vh;
 }
 .team .box {
     border: 2px solid var(--contrast); 
@@ -191,26 +204,41 @@ h5{
     margin: 20px 0;
 }
 .box{
+    margin-top: 70px;
     width: 100%;
+    vertical-align: end;
+    padding-left: 20px;
 }
 .box .line{
-    border-bottom: var(--contrast);
+    border-bottom: 2px solid var(--contrast);
     font-size: 0;
+    width: 25%;
 }
 .confer{
-    height: 60vh;
+    height: 80vh;
 }
 .confer img{
     padding: 25px 0;    
-    width: 40%;
+    width: 38%;
+    object-fit:cover;
 }
 .trans-box{
-    width: 350px;
+    width: 400px;
+    padding: 25px;
+    justify-content:baseline;
     background:linear-gradient(rgba(255, 255, 255, 0.795),rgba(255, 255, 255, 0.795)center center);
 }
 .trans-box h4{
     font-size: 26px;
     font-weight: 600;
+}
+.around{
+    justify-content: center;
+}
+.star i{
+    padding: 30px 3px;
+    color: gold;
+    font-size: 32px;
 }
 .trans-box p{
     font-size: 12px;
@@ -218,8 +246,8 @@ h5{
     width: 350px;
 }
 .service{
-    height: 60vh;
-    border: 2px solid #fd6568;
+    height: 65vh;
+    margin: 30px 0;
     text-align: center;
 }
 .service .box{
@@ -246,9 +274,11 @@ h5{
 .testimonial{
     display: flex;
     width: 100%;
+    height: 60vh;
     align-content: center;
     align-items: center;
     justify-content: center;
+    vertical-align: middle;
 }
 .banner{    
     width: 100%;
@@ -256,13 +286,31 @@ h5{
     display: flex;
     text-align: center;
     justify-content: center;
-    vertical-align: center;
+    vertical-align: middle;
     font-size: 42px;
     font-weight: 700;
     color: var(--bg);
+    
 }
 .about .banner{
     background: url(../media/hero/about_hero.jpg);
+    object-fit: cover;
+}
+.Services .banner{
+    background: url(../media/hero/services_hero.jpg);
+    object-fit: cover;
+}
+.case .banner{
+    background: url(../media/hero/cases_hero.jpg);
+    object-fit: cover;
+}
+.contact .banner{
+    background: url(../media/hero/contact_hero.jpg);
+    object-fit: cover;
+}
+.blog .banner{
+    background: url(../media/hero/blog_hero.jpg);
+    object-fit: cover;
 }
 footer{
     padding: 40px 0;
@@ -296,7 +344,7 @@ footer .artical{
 .call-back{
     background-color: var(--primary);
     color: var(--bg);
-    height: 35vh;
+    height: 38vh;
 }
 .call-back .artical{
     flex: 0 1 40%;
