@@ -400,6 +400,7 @@ h5{
 footer{
     padding: 40px 0;
     height: 70vh;
+    line-height: 2;
 }
 footer span{
     color: var(--contrast);
@@ -407,6 +408,9 @@ footer span{
 footer a,.footer_para{
     text-decoration: none;
     color: var(--sub-text);
+}
+.footer_para{
+    padding-left: 10px;
 }
 small{
     color: var(--sub-text);
@@ -425,6 +429,11 @@ footer h6{
 }
 footer .artical{
     width: 30%;
+}
+.company 
+.services
+.get_in_touch {
+	line-height: 2;
 }
 .call-back{
     background-color: var(--primary);
